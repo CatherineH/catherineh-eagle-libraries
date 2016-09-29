@@ -1,0 +1,5 @@
+# intermediate eagle files
+*.l#*
+*.s#*
+*.b#*
+
