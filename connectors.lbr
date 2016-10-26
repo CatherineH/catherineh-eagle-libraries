@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -146,6 +146,48 @@
 <wire x1="-2.54" y1="-2.83" x2="-3.28" y2="-2.83" width="0.127" layer="21"/>
 <wire x1="-3.28" y1="-2.83" x2="-3.28" y2="5.08" width="0.127" layer="21"/>
 </package>
+<package name="MOLEX_BNC_73100">
+<description>BNC Connector Receptacle, Female Socket 50 Ohm Through Hole, Right Angle Solder 73100-0105, 73171-3150 Molex</description>
+<pad name="PIN" x="0" y="0" drill="0.8" diameter="1.016"/>
+<pad name="GND$1" x="-3.7973" y="7.7978" drill="1.8288" diameter="2.1844"/>
+<pad name="GND$2" x="3.78968125" y="7.7978" drill="1.8288" diameter="2.1844"/>
+<wire x1="-5.08" y1="12.3952" x2="5.08" y2="12.3952" width="0.127" layer="21"/>
+<wire x1="5.08" y1="12.3952" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="12.3952" width="0.127" layer="21"/>
+<text x="-3.81" y="1.27" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3.81" y="3.81" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+<package name="R141426">
+<description>&lt;b&gt;BNC COAX CONNECTOR&lt;/b&gt;&lt;p&gt;
+Radiall&lt;p&gt;
+50/75 Ohm &lt;p&gt;
+Spoerle</description>
+<wire x1="-5.95" y1="-6" x2="5.95" y2="-6" width="0.254" layer="51"/>
+<wire x1="6" y1="-5.95" x2="6" y2="5.95" width="0.254" layer="51"/>
+<wire x1="5.95" y1="6" x2="-5.95" y2="6" width="0.254" layer="51"/>
+<wire x1="-6" y1="5.95" x2="-6" y2="-5.95" width="0.254" layer="51"/>
+<wire x1="-1.5" y1="0.5" x2="1.5" y2="0.5" width="0.3048" layer="21" curve="-143.130102"/>
+<wire x1="-1.5" y1="-0.5" x2="1.5" y2="-0.5" width="0.3048" layer="21" curve="143.130102"/>
+<wire x1="-4.572" y1="1.016" x2="-5.461" y2="1.016" width="0.254" layer="21"/>
+<wire x1="-5.461" y1="1.016" x2="-5.461" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="-5.461" y1="-1.016" x2="-4.572" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="4.572" y1="-1.016" x2="5.461" y2="-1.016" width="0.254" layer="21"/>
+<wire x1="5.461" y1="-1.016" x2="5.461" y2="1.016" width="0.254" layer="21"/>
+<wire x1="5.461" y1="1.016" x2="4.572" y2="1.016" width="0.254" layer="21"/>
+<wire x1="-6" y1="3.41" x2="-6" y2="-3.41" width="0.254" layer="21"/>
+<wire x1="3.41" y1="6" x2="-3.41" y2="6" width="0.254" layer="21"/>
+<wire x1="6" y1="-3.41" x2="6" y2="3.41" width="0.254" layer="21"/>
+<wire x1="-3.41" y1="-6" x2="3.41" y2="-6" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="4.5961" width="0.254" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.2954"/>
+<pad name="2" x="5.08" y="5.08" drill="1.2954"/>
+<pad name="3" x="-5.08" y="5.08" drill="1.2954"/>
+<pad name="4" x="-5.08" y="-5.08" drill="1.2954"/>
+<pad name="5" x="5.08" y="-5.08" drill="1.2954"/>
+<text x="-2.54" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="215309-8">
@@ -230,6 +272,22 @@
 <pin name="P$10" x="12.7" y="-12.7" length="middle" rot="R180"/>
 <text x="0" y="2.54" size="1.27" layer="94">&gt;NAME</text>
 <text x="0" y="-17.78" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="BU-BNC">
+<description>BNC symbol</description>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.254" x2="-0.762" y2="0.254" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.254" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.254" x2="-2.54" y2="-0.254" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -339,6 +397,28 @@
 <connect gate="G$1" pin="P$7" pad="7"/>
 <connect gate="G$1" pin="P$8" pad="8"/>
 <connect gate="G$1" pin="P$9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R141426" prefix="X">
+<description>&lt;b&gt;BNC COAX CONNECTOR&lt;/b&gt;&lt;p&gt;
+Molex&lt;p&gt;
+50 Ohm Through Hole&lt;p&gt;
+digikey:  	WM5524-ND 
+0731000105</description>
+<gates>
+<gate name="G$1" symbol="BU-BNC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_BNC_73100">
+<connects>
+<connect gate="G$1" pin="1" pad="PIN"/>
+<connect gate="G$1" pin="2" pad="GND$2"/>
+<connect gate="G$1" pin="3" pad="GND$1"/>
 </connects>
 <technologies>
 <technology name=""/>
