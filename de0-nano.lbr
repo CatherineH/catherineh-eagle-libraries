@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>DE0-NANO</description>
+<packages>
+<package name="DE0_NANO_PAC">
+<description>de0 nano</description>
+<smd name="GPIO_04" x="-13.71" y="-19.08" dx="1" dy="3" layer="1" rot="R180"/>
+<smd name="GPIO_02" x="-16.25" y="-19.08" dx="1" dy="3" layer="1" rot="R180"/>
+<smd name="GPIO_0_IN1" x="-18.79" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_0_IN0" x="-21.33" y="-19.08" dx="1" dy="3" layer="1" rot="R180"/>
+<smd name="GPIO_06" x="-11.17" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="VCC3P3@2" x="-8.63" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_08" x="-6.09" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_010" x="-3.55" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_012" x="-1.01" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_014" x="1.53" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_016" x="4.07" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_018" x="6.61" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_020" x="9.15" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_022" x="11.69" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="VCC_SYS@2" x="14.23" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_024" x="16.77" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_026" x="19.31" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_028" x="21.85" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_030" x="24.39" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_032" x="26.93" y="-19.08" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_00" x="-21.33" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_01" x="-18.79" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_03" x="-16.25" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_05" x="-13.71" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_07" x="-11.17" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GND@4" x="-8.63" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_09" x="-6.09" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_011" x="-3.55" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_013" x="-1.01" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_015" x="1.53" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_017" x="4.07" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_019" x="6.61" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_021" x="9.15" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_023" x="11.69" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GND@3" x="14.23" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_025" x="16.77" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_027" x="19.31" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_029" x="21.85" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_031" x="24.39" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_033" x="26.93" y="-25.88" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_132" x="-21.33" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_130" x="-18.79" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_128" x="-16.25" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_126" x="-13.71" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_124" x="-11.17" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="VCC_SYS@1" x="-8.63" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_122" x="-6.09" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_120" x="-3.55" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_118" x="-1.01" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_116" x="1.53" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_114" x="4.07" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_112" x="6.61" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_18" x="11.69" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_110" x="9.15" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="VCC3P3@1" x="14.23" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_16" x="16.77" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_14" x="19.31" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_12" x="21.85" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_1_IN1" x="24.39" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_1_IN0" x="26.93" y="18.32" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_133" x="-21.33" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_129" x="-16.25" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_131" x="-18.79" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_127" x="-13.71" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_125" x="-11.17" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GND@1" x="-8.63" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_123" x="-6.09" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_121" x="-3.55" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_119" x="-1.01" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_117" x="1.53" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_115" x="4.07" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_113" x="6.61" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_111" x="9.15" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_19" x="11.69" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GND@2" x="14.23" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_17" x="16.77" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_15" x="19.31" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_13" x="21.85" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_11" x="24.39" y="25.12" dx="1" dy="3" layer="1"/>
+<smd name="GPIO_10" x="26.93" y="25.12" dx="1" dy="3" layer="1"/>
+<text x="-22.35" y="13.59" size="1.4224" layer="25">&gt;GPIO-1</text>
+<text x="-18.54" y="12.32" size="1.27" layer="25" rot="R180">&gt;JP2</text>
+<text x="-21.08" y="-15.62" size="1.27" layer="25">&gt;JP1</text>
+<text x="-21.08" y="-13.08" size="1.27" layer="25">&gt;GPIO-0</text>
+<wire x1="-37.59" y1="-24.51" x2="-37.59" y2="24.51" width="0.127" layer="25"/>
+<wire x1="-37.59" y1="24.51" x2="37.6" y2="24.51" width="0.127" layer="25"/>
+<wire x1="37.6" y1="24.51" x2="37.6" y2="-24.51" width="0.127" layer="25"/>
+<wire x1="37.6" y1="-24.51" x2="-37.59" y2="-24.51" width="0.127" layer="25"/>
+<circle x="-34.54" y="-21.21" radius="1.6" width="0.127" layer="25"/>
+<circle x="-34.54" y="-21.21" radius="3.18" width="0.127" layer="25"/>
+<circle x="34.29" y="-21.21" radius="1.6" width="0.127" layer="25"/>
+<circle x="34.29" y="-21.21" radius="3.18" width="0.127" layer="25"/>
+<circle x="34.29" y="21.21" radius="1.6" width="0.127" layer="25"/>
+<circle x="34.29" y="21.21" radius="3.18" width="0.127" layer="25"/>
+<circle x="-34.54" y="21.21" radius="1.6" width="0.127" layer="25"/>
+<circle x="-34.54" y="21.21" radius="3.18" width="0.127" layer="25"/>
+<text x="-12.7" y="13.97" size="1.27" layer="21">NPTC202KFMS</text>
+<text x="-12.7" y="-15.24" size="1.27" layer="21">NPTC202KFMS</text>
+<hole x="-34.54" y="21.21" drill="3.2"/>
+<hole x="-34.54" y="-21.21" drill="3.2"/>
+<hole x="34.29" y="21.21" drill="3.2"/>
+<hole x="34.29" y="-21.21" drill="3.2"/>
+<polygon width="0.127" layer="39">
+<vertex x="-34.6" y="-18" curve="90"/>
+<vertex x="-37.8" y="-21.2"/>
+<vertex x="-37.8" y="-21.3" curve="90"/>
+<vertex x="-34.7" y="-24.4"/>
+<vertex x="-34.6" y="-24.4" curve="90"/>
+<vertex x="-31.4" y="-21.2"/>
+<vertex x="-31.4" y="-21.1" curve="90"/>
+<vertex x="-34.5" y="-18"/>
+</polygon>
+<polygon width="0.127" layer="40">
+<vertex x="-34.6" y="-18" curve="90"/>
+<vertex x="-37.8" y="-21.2"/>
+<vertex x="-37.8" y="-21.3" curve="90"/>
+<vertex x="-34.7" y="-24.4"/>
+<vertex x="-34.6" y="-24.4" curve="90"/>
+<vertex x="-31.4" y="-21.2"/>
+<vertex x="-31.4" y="-21.1" curve="90"/>
+<vertex x="-34.5" y="-18"/>
+</polygon>
+<polygon width="0.127" layer="40">
+<vertex x="-34.6" y="24.4" curve="90"/>
+<vertex x="-37.8" y="21.2"/>
+<vertex x="-37.8" y="21.1" curve="90"/>
+<vertex x="-34.7" y="18"/>
+<vertex x="-34.6" y="18" curve="90"/>
+<vertex x="-31.4" y="21.2"/>
+<vertex x="-31.4" y="21.3" curve="90"/>
+<vertex x="-34.5" y="24.4"/>
+</polygon>
+<polygon width="0.127" layer="39">
+<vertex x="-34.6" y="24.4" curve="90"/>
+<vertex x="-37.8" y="21.2"/>
+<vertex x="-37.8" y="21.1" curve="90"/>
+<vertex x="-34.7" y="18"/>
+<vertex x="-34.6" y="18" curve="90"/>
+<vertex x="-31.4" y="21.2"/>
+<vertex x="-31.4" y="21.3" curve="90"/>
+<vertex x="-34.5" y="24.4"/>
+</polygon>
+<polygon width="0.127" layer="39">
+<vertex x="34.3" y="24.4" curve="90"/>
+<vertex x="31.1" y="21.2"/>
+<vertex x="31.1" y="21.1" curve="90"/>
+<vertex x="34.2" y="18"/>
+<vertex x="34.3" y="18" curve="90"/>
+<vertex x="37.5" y="21.2"/>
+<vertex x="37.5" y="21.3" curve="90"/>
+<vertex x="34.4" y="24.4"/>
+</polygon>
+<polygon width="0.127" layer="40">
+<vertex x="34.3" y="24.4" curve="90"/>
+<vertex x="31.1" y="21.2"/>
+<vertex x="31.1" y="21.1" curve="90"/>
+<vertex x="34.2" y="18"/>
+<vertex x="34.3" y="18" curve="90"/>
+<vertex x="37.5" y="21.2"/>
+<vertex x="37.5" y="21.3" curve="90"/>
+<vertex x="34.4" y="24.4"/>
+</polygon>
+<polygon width="0.127" layer="40">
+<vertex x="34.2" y="-18" curve="90"/>
+<vertex x="31.1" y="-21.6"/>
+<vertex x="31.2" y="-21.3" curve="90"/>
+<vertex x="34.3" y="-24.4"/>
+<vertex x="34.2" y="-24.5" curve="90"/>
+<vertex x="37.4" y="-21.3"/>
+<vertex x="37.5" y="-21.5" curve="90"/>
+<vertex x="34.5" y="-18.1"/>
+</polygon>
+<polygon width="0.127" layer="39">
+<vertex x="34.3" y="-18" curve="90"/>
+<vertex x="31.1" y="-21.2"/>
+<vertex x="31.2" y="-21.3" curve="90"/>
+<vertex x="34.3" y="-24.4"/>
+<vertex x="34" y="-24.4" curve="90"/>
+<vertex x="37.5" y="-21.6"/>
+<vertex x="37.5" y="-21.5" curve="90"/>
+<vertex x="34.6" y="-18.1"/>
+</polygon>
+<wire x1="-22.352" y1="-16.51" x2="-22.352" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="-22.352" y1="-21.59" x2="-20.32" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="-21.59" x2="-20.32" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="-16.51" x2="-22.352" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="25.908" y1="20.32" x2="25.908" y2="16.51" width="0.127" layer="21"/>
+<wire x1="25.908" y1="16.51" x2="27.94" y2="16.51" width="0.127" layer="21"/>
+<wire x1="27.94" y1="16.51" x2="27.94" y2="20.32" width="0.127" layer="21"/>
+<wire x1="27.94" y1="20.32" x2="25.908" y2="20.32" width="0.127" layer="21"/>
+<wire x1="13.462" y1="27.051" x2="13.462" y2="16.383" width="0.127" layer="21"/>
+<wire x1="13.462" y1="16.383" x2="14.986" y2="16.383" width="0.127" layer="21"/>
+<wire x1="14.986" y1="16.383" x2="14.986" y2="27.051" width="0.127" layer="21"/>
+<wire x1="14.986" y1="27.051" x2="13.462" y2="27.051" width="0.127" layer="21"/>
+<wire x1="-9.398" y1="27.051" x2="-9.398" y2="16.383" width="0.127" layer="21"/>
+<wire x1="-9.398" y1="16.383" x2="-7.874" y2="16.383" width="0.127" layer="21"/>
+<wire x1="-7.874" y1="16.383" x2="-7.874" y2="27.051" width="0.127" layer="21"/>
+<wire x1="-7.874" y1="27.051" x2="-9.398" y2="27.051" width="0.127" layer="21"/>
+<wire x1="-9.398" y1="-27.94" x2="-9.398" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-9.398" y1="-16.51" x2="-7.874" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-7.874" y1="-16.51" x2="-7.874" y2="-27.94" width="0.127" layer="21"/>
+<wire x1="-7.874" y1="-27.94" x2="-9.398" y2="-27.94" width="0.127" layer="21"/>
+<wire x1="14.986" y1="-27.94" x2="13.462" y2="-27.94" width="0.127" layer="21"/>
+<wire x1="13.462" y1="-27.94" x2="13.462" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="13.462" y1="-16.51" x2="14.986" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="14.986" y1="-16.51" x2="14.986" y2="-27.94" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DE0_NANO">
+<description>DE0-Nano jumpers</description>
+<pin name="GPIO_0_IN0" x="-40.64" y="20.32" length="middle"/>
+<pin name="GPIO_0_IN1" x="-40.64" y="17.78" length="middle"/>
+<pin name="GPIO_02" x="-40.64" y="15.24" length="middle"/>
+<pin name="GPIO_04" x="-40.64" y="12.7" length="middle"/>
+<pin name="GPIO_06" x="-40.64" y="10.16" length="middle"/>
+<pin name="VCC_SYS@1" x="-40.64" y="7.62" length="middle" direction="pwr"/>
+<pin name="GPIO_08" x="-40.64" y="5.08" length="middle"/>
+<pin name="GPIO_010" x="-40.64" y="2.54" length="middle"/>
+<pin name="GPIO_012" x="-40.64" y="0" length="middle"/>
+<pin name="GPIO_014" x="-40.64" y="-2.54" length="middle"/>
+<pin name="GPIO_016" x="-40.64" y="-5.08" length="middle"/>
+<pin name="GPIO_018" x="-40.64" y="-7.62" length="middle"/>
+<pin name="GPIO_020" x="-40.64" y="-10.16" length="middle"/>
+<pin name="GPIO_022" x="-40.64" y="-12.7" length="middle"/>
+<pin name="VCC3P3@1" x="-40.64" y="-15.24" length="middle" direction="pwr"/>
+<pin name="GPIO_024" x="-40.64" y="-17.78" length="middle"/>
+<pin name="GPIO_026" x="-40.64" y="-20.32" length="middle"/>
+<pin name="GPIO_028" x="-40.64" y="-22.86" length="middle"/>
+<pin name="GPIO_030" x="-40.64" y="-25.4" length="middle"/>
+<pin name="GPIO_032" x="-40.64" y="-27.94" length="middle"/>
+<pin name="GPIO_00" x="0" y="20.32" length="middle" rot="R180"/>
+<pin name="GPIO_01" x="0" y="17.78" length="middle" rot="R180"/>
+<pin name="GPIO_03" x="0" y="15.24" length="middle" rot="R180"/>
+<pin name="GPIO_05" x="0" y="12.7" length="middle" rot="R180"/>
+<pin name="GPIO_07" x="0" y="10.16" length="middle" rot="R180"/>
+<pin name="GPIO_09" x="0" y="5.08" length="middle" rot="R180"/>
+<pin name="GPIO_011" x="0" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO_013" x="0" y="0" length="middle" rot="R180"/>
+<pin name="GPIO_015" x="0" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO_017" x="0" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO_019" x="0" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO_021" x="0" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO_023" x="0" y="-12.7" length="middle" rot="R180"/>
+<pin name="GPIO_025" x="0" y="-17.78" length="middle" rot="R180"/>
+<pin name="GPIO_027" x="0" y="-20.32" length="middle" rot="R180"/>
+<pin name="GPIO_029" x="0" y="-22.86" length="middle" rot="R180"/>
+<pin name="GPIO_031" x="0" y="-25.4" length="middle" rot="R180"/>
+<pin name="GPIO_033" x="0" y="-27.94" length="middle" rot="R180"/>
+<wire x1="-35.56" y1="-30.48" x2="-35.56" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="22.86" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="22.86" x2="-5.08" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-30.48" x2="-35.56" y2="-30.48" width="0.254" layer="94"/>
+<text x="-50.8" y="20.32" size="1.27" layer="94">1</text>
+<text x="-50.8" y="15.24" size="1.27" layer="94">5</text>
+<text x="-50.8" y="12.7" size="1.27" layer="94">7</text>
+<text x="-50.8" y="10.16" size="1.27" layer="94">9</text>
+<text x="-50.8" y="7.62" size="1.27" layer="94">11</text>
+<text x="-50.8" y="5.08" size="1.27" layer="94">13</text>
+<text x="-50.8" y="2.54" size="1.27" layer="94">15</text>
+<text x="-50.8" y="0" size="1.27" layer="94">17</text>
+<text x="-50.8" y="-2.54" size="1.27" layer="94">19</text>
+<text x="-50.8" y="-5.08" size="1.27" layer="94">21</text>
+<text x="-50.8" y="-7.62" size="1.27" layer="94">23</text>
+<text x="-50.8" y="-10.16" size="1.27" layer="94">25</text>
+<text x="-50.8" y="-12.7" size="1.27" layer="94">27</text>
+<text x="-50.8" y="-15.24" size="1.27" layer="94">29</text>
+<text x="-50.8" y="-17.78" size="1.27" layer="94">31</text>
+<text x="-50.8" y="-20.32" size="1.27" layer="94">33</text>
+<text x="-50.8" y="-22.86" size="1.27" layer="94">35</text>
+<text x="-50.8" y="-25.4" size="1.27" layer="94">37</text>
+<text x="-50.8" y="-27.94" size="1.27" layer="94">39</text>
+<text x="7.62" y="20.32" size="1.27" layer="94">2</text>
+<text x="-50.8" y="17.78" size="1.27" layer="94">3</text>
+<text x="7.62" y="17.78" size="1.27" layer="94">4</text>
+<text x="7.62" y="15.24" size="1.27" layer="94">6</text>
+<text x="7.62" y="12.7" size="1.27" layer="94">8</text>
+<text x="7.62" y="10.16" size="1.27" layer="94">10</text>
+<text x="7.62" y="7.62" size="1.27" layer="94">12</text>
+<text x="7.62" y="5.08" size="1.27" layer="94">14</text>
+<text x="7.62" y="2.54" size="1.27" layer="94">16</text>
+<text x="7.62" y="0" size="1.27" layer="94">18</text>
+<text x="7.62" y="-2.54" size="1.27" layer="94">20</text>
+<text x="7.62" y="-5.08" size="1.27" layer="94">22</text>
+<text x="7.62" y="-7.62" size="1.27" layer="94">24</text>
+<text x="7.62" y="-10.16" size="1.27" layer="94">26</text>
+<text x="7.62" y="-12.7" size="1.27" layer="94">28</text>
+<text x="7.62" y="-15.24" size="1.27" layer="94">30</text>
+<text x="7.62" y="-17.78" size="1.27" layer="94">32</text>
+<text x="7.62" y="-20.32" size="1.27" layer="94">34</text>
+<text x="7.62" y="-22.86" size="1.27" layer="94">36</text>
+<text x="7.62" y="-25.4" size="1.27" layer="94">38</text>
+<text x="7.62" y="-27.94" size="1.27" layer="94">40</text>
+<pin name="GND@1" x="0" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="0" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO_1_IN0" x="55.88" y="20.32" length="middle"/>
+<pin name="GPIO_1_IN1" x="55.88" y="17.78" length="middle"/>
+<pin name="GPIO_12" x="55.88" y="15.24" length="middle"/>
+<pin name="GPIO_14" x="55.88" y="12.7" length="middle"/>
+<pin name="GPIO_16" x="55.88" y="10.16" length="middle"/>
+<pin name="VCC_SYS@2" x="55.88" y="7.62" length="middle" direction="pwr"/>
+<pin name="GPIO_18" x="55.88" y="5.08" length="middle"/>
+<pin name="GPIO_110" x="55.88" y="2.54" length="middle"/>
+<pin name="GPIO_112" x="55.88" y="0" length="middle"/>
+<pin name="GPIO_114" x="55.88" y="-2.54" length="middle"/>
+<pin name="GPIO_116" x="55.88" y="-5.08" length="middle"/>
+<pin name="GPIO_118" x="55.88" y="-7.62" length="middle"/>
+<pin name="GPIO_120" x="55.88" y="-10.16" length="middle"/>
+<pin name="GPIO_122" x="55.88" y="-12.7" length="middle"/>
+<pin name="VCC3P3@2" x="55.88" y="-15.24" length="middle" direction="pwr"/>
+<pin name="GPIO_124" x="55.88" y="-17.78" length="middle"/>
+<pin name="GPIO_126" x="55.88" y="-20.32" length="middle"/>
+<pin name="GPIO_128" x="55.88" y="-22.86" length="middle"/>
+<pin name="GPIO_130" x="55.88" y="-25.4" length="middle"/>
+<pin name="GPIO_132" x="55.88" y="-27.94" length="middle"/>
+<pin name="GPIO_10" x="96.52" y="20.32" length="middle" rot="R180"/>
+<pin name="GPIO_11" x="96.52" y="17.78" length="middle" rot="R180"/>
+<pin name="GPIO_13" x="96.52" y="15.24" length="middle" rot="R180"/>
+<pin name="GPIO_15" x="96.52" y="12.7" length="middle" rot="R180"/>
+<pin name="GPIO_17" x="96.52" y="10.16" length="middle" rot="R180"/>
+<pin name="GND@3" x="96.52" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO_19" x="96.52" y="5.08" length="middle" rot="R180"/>
+<pin name="GPIO_111" x="96.52" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO_113" x="96.52" y="0" length="middle" rot="R180"/>
+<pin name="GPIO_115" x="96.52" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO_117" x="96.52" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO_119" x="96.52" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO_121" x="96.52" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO_123" x="96.52" y="-12.7" length="middle" rot="R180"/>
+<pin name="GND@4" x="96.52" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO_125" x="96.52" y="-17.78" length="middle" rot="R180"/>
+<pin name="GPIO_127" x="96.52" y="-20.32" length="middle" rot="R180"/>
+<pin name="GPIO_129" x="96.52" y="-22.86" length="middle" rot="R180"/>
+<pin name="GPIO_131" x="96.52" y="-25.4" length="middle" rot="R180"/>
+<pin name="GPIO_133" x="96.52" y="-27.94" length="middle" rot="R180"/>
+<wire x1="60.96" y1="22.86" x2="91.44" y2="22.86" width="0.254" layer="94"/>
+<wire x1="91.44" y1="22.86" x2="91.44" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="91.44" y1="-30.48" x2="60.96" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="60.96" y1="-30.48" x2="60.96" y2="22.86" width="0.254" layer="94"/>
+<text x="-33.02" y="25.4" size="1.27" layer="95">&gt;GPIO-0</text>
+<text x="63.5" y="25.4" size="1.27" layer="95">&gt;GPIO-1</text>
+<text x="45.72" y="20.32" size="1.27" layer="94">1</text>
+<text x="45.72" y="17.78" size="1.27" layer="94">3</text>
+<text x="45.72" y="15.24" size="1.27" layer="94">5</text>
+<text x="45.72" y="12.7" size="1.27" layer="94">7</text>
+<text x="45.72" y="10.16" size="1.27" layer="94">9</text>
+<text x="45.72" y="7.62" size="1.27" layer="94">11</text>
+<text x="45.72" y="5.08" size="1.27" layer="94">13</text>
+<text x="45.72" y="2.54" size="1.27" layer="94">15</text>
+<text x="45.72" y="0" size="1.27" layer="94">17</text>
+<text x="45.72" y="-2.54" size="1.27" layer="94">19</text>
+<text x="45.72" y="-5.08" size="1.27" layer="94">21</text>
+<text x="45.72" y="-7.62" size="1.27" layer="94">23</text>
+<text x="45.72" y="-10.16" size="1.27" layer="94">25</text>
+<text x="45.72" y="-12.7" size="1.27" layer="94">27</text>
+<text x="45.72" y="-15.24" size="1.27" layer="94">29</text>
+<text x="45.72" y="-17.78" size="1.27" layer="94">31</text>
+<text x="45.72" y="-20.32" size="1.27" layer="94">33</text>
+<text x="45.72" y="-22.86" size="1.27" layer="94">35</text>
+<text x="45.72" y="-25.4" size="1.27" layer="94">37</text>
+<text x="45.72" y="-27.94" size="1.27" layer="94">39</text>
+<text x="104.14" y="20.32" size="1.27" layer="94">2</text>
+<text x="104.14" y="17.78" size="1.27" layer="94">4</text>
+<text x="104.14" y="15.24" size="1.27" layer="94">6</text>
+<text x="104.14" y="12.7" size="1.27" layer="94">8</text>
+<text x="104.14" y="10.16" size="1.27" layer="94">10</text>
+<text x="104.14" y="7.62" size="1.27" layer="94">12</text>
+<text x="104.14" y="5.08" size="1.27" layer="94">14</text>
+<text x="104.14" y="2.54" size="1.27" layer="94">16</text>
+<text x="104.14" y="0" size="1.27" layer="94">18</text>
+<text x="104.14" y="-2.54" size="1.27" layer="94">20</text>
+<text x="104.14" y="-5.08" size="1.27" layer="94">22</text>
+<text x="104.14" y="-7.62" size="1.27" layer="94">24</text>
+<text x="104.14" y="-10.16" size="1.27" layer="94">26</text>
+<text x="104.14" y="-12.7" size="1.27" layer="94">28</text>
+<text x="104.14" y="-15.24" size="1.27" layer="94">30</text>
+<text x="104.14" y="-17.78" size="1.27" layer="94">32</text>
+<text x="104.14" y="-20.32" size="1.27" layer="94">34</text>
+<text x="104.14" y="-22.86" size="1.27" layer="94">36</text>
+<text x="104.14" y="-25.4" size="1.27" layer="94">38</text>
+<text x="104.14" y="-27.94" size="1.27" layer="94">40</text>
+<text x="-33.02" y="-35.56" size="1.27" layer="96">&gt;JP1</text>
+<text x="66.04" y="-35.56" size="1.27" layer="96">JP2</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DE0_NANO">
+<description>DE0_NANO</description>
+<gates>
+<gate name="G$1" symbol="DE0_NANO" x="-7.62" y="15.24"/>
+</gates>
+<devices>
+<device name="" package="DE0_NANO_PAC">
+<connects>
+<connect gate="G$1" pin="GND@1" pad="GND@1"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="GND@3" pad="GND@3"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="GPIO_00" pad="GPIO_00"/>
+<connect gate="G$1" pin="GPIO_01" pad="GPIO_01"/>
+<connect gate="G$1" pin="GPIO_010" pad="GPIO_010"/>
+<connect gate="G$1" pin="GPIO_011" pad="GPIO_011"/>
+<connect gate="G$1" pin="GPIO_012" pad="GPIO_012"/>
+<connect gate="G$1" pin="GPIO_013" pad="GPIO_013"/>
+<connect gate="G$1" pin="GPIO_014" pad="GPIO_014"/>
+<connect gate="G$1" pin="GPIO_015" pad="GPIO_015"/>
+<connect gate="G$1" pin="GPIO_016" pad="GPIO_016"/>
+<connect gate="G$1" pin="GPIO_017" pad="GPIO_017"/>
+<connect gate="G$1" pin="GPIO_018" pad="GPIO_018"/>
+<connect gate="G$1" pin="GPIO_019" pad="GPIO_019"/>
+<connect gate="G$1" pin="GPIO_02" pad="GPIO_02"/>
+<connect gate="G$1" pin="GPIO_020" pad="GPIO_020"/>
+<connect gate="G$1" pin="GPIO_021" pad="GPIO_021"/>
+<connect gate="G$1" pin="GPIO_022" pad="GPIO_022"/>
+<connect gate="G$1" pin="GPIO_023" pad="GPIO_023"/>
+<connect gate="G$1" pin="GPIO_024" pad="GPIO_024"/>
+<connect gate="G$1" pin="GPIO_025" pad="GPIO_025"/>
+<connect gate="G$1" pin="GPIO_026" pad="GPIO_026"/>
+<connect gate="G$1" pin="GPIO_027" pad="GPIO_027"/>
+<connect gate="G$1" pin="GPIO_028" pad="GPIO_028"/>
+<connect gate="G$1" pin="GPIO_029" pad="GPIO_029"/>
+<connect gate="G$1" pin="GPIO_03" pad="GPIO_03"/>
+<connect gate="G$1" pin="GPIO_030" pad="GPIO_030"/>
+<connect gate="G$1" pin="GPIO_031" pad="GPIO_031"/>
+<connect gate="G$1" pin="GPIO_032" pad="GPIO_032"/>
+<connect gate="G$1" pin="GPIO_033" pad="GPIO_033"/>
+<connect gate="G$1" pin="GPIO_04" pad="GPIO_04"/>
+<connect gate="G$1" pin="GPIO_05" pad="GPIO_05"/>
+<connect gate="G$1" pin="GPIO_06" pad="GPIO_06"/>
+<connect gate="G$1" pin="GPIO_07" pad="GPIO_07"/>
+<connect gate="G$1" pin="GPIO_08" pad="GPIO_08"/>
+<connect gate="G$1" pin="GPIO_09" pad="GPIO_09"/>
+<connect gate="G$1" pin="GPIO_0_IN0" pad="GPIO_0_IN0"/>
+<connect gate="G$1" pin="GPIO_0_IN1" pad="GPIO_0_IN1"/>
+<connect gate="G$1" pin="GPIO_10" pad="GPIO_10"/>
+<connect gate="G$1" pin="GPIO_11" pad="GPIO_11"/>
+<connect gate="G$1" pin="GPIO_110" pad="GPIO_110"/>
+<connect gate="G$1" pin="GPIO_111" pad="GPIO_111"/>
+<connect gate="G$1" pin="GPIO_112" pad="GPIO_112"/>
+<connect gate="G$1" pin="GPIO_113" pad="GPIO_113"/>
+<connect gate="G$1" pin="GPIO_114" pad="GPIO_114"/>
+<connect gate="G$1" pin="GPIO_115" pad="GPIO_115"/>
+<connect gate="G$1" pin="GPIO_116" pad="GPIO_116"/>
+<connect gate="G$1" pin="GPIO_117" pad="GPIO_117"/>
+<connect gate="G$1" pin="GPIO_118" pad="GPIO_118"/>
+<connect gate="G$1" pin="GPIO_119" pad="GPIO_119"/>
+<connect gate="G$1" pin="GPIO_12" pad="GPIO_12"/>
+<connect gate="G$1" pin="GPIO_120" pad="GPIO_120"/>
+<connect gate="G$1" pin="GPIO_121" pad="GPIO_121"/>
+<connect gate="G$1" pin="GPIO_122" pad="GPIO_122"/>
+<connect gate="G$1" pin="GPIO_123" pad="GPIO_123"/>
+<connect gate="G$1" pin="GPIO_124" pad="GPIO_124"/>
+<connect gate="G$1" pin="GPIO_125" pad="GPIO_125"/>
+<connect gate="G$1" pin="GPIO_126" pad="GPIO_126"/>
+<connect gate="G$1" pin="GPIO_127" pad="GPIO_127"/>
+<connect gate="G$1" pin="GPIO_128" pad="GPIO_128"/>
+<connect gate="G$1" pin="GPIO_129" pad="GPIO_129"/>
+<connect gate="G$1" pin="GPIO_13" pad="GPIO_13"/>
+<connect gate="G$1" pin="GPIO_130" pad="GPIO_130"/>
+<connect gate="G$1" pin="GPIO_131" pad="GPIO_131"/>
+<connect gate="G$1" pin="GPIO_132" pad="GPIO_132"/>
+<connect gate="G$1" pin="GPIO_133" pad="GPIO_133"/>
+<connect gate="G$1" pin="GPIO_14" pad="GPIO_14"/>
+<connect gate="G$1" pin="GPIO_15" pad="GPIO_15"/>
+<connect gate="G$1" pin="GPIO_16" pad="GPIO_16"/>
+<connect gate="G$1" pin="GPIO_17" pad="GPIO_17"/>
+<connect gate="G$1" pin="GPIO_18" pad="GPIO_18"/>
+<connect gate="G$1" pin="GPIO_19" pad="GPIO_19"/>
+<connect gate="G$1" pin="GPIO_1_IN0" pad="GPIO_1_IN0"/>
+<connect gate="G$1" pin="GPIO_1_IN1" pad="GPIO_1_IN1"/>
+<connect gate="G$1" pin="VCC3P3@1" pad="VCC3P3@1"/>
+<connect gate="G$1" pin="VCC3P3@2" pad="VCC3P3@2"/>
+<connect gate="G$1" pin="VCC_SYS@1" pad="VCC_SYS@1"/>
+<connect gate="G$1" pin="VCC_SYS@2" pad="VCC_SYS@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
